@@ -69,7 +69,7 @@ class Tm1640 extends AbstractDriver:
   off -> none:
     set_brightness 0
 
-  /// Used by the pixel-display library.
+  /// Not normally called by users of this package.  Used by the pixel-display library.
   draw_two_color left/int top/int right/int bottom/int pixels/ByteArray -> none:
     command_ TM1640_AUTOINCREMENT_ADDRESS_
 
