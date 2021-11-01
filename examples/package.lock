@@ -1,0 +1,17 @@
+prefixes:
+  font_clock: toit-font-clock
+  pixel_display: toit-pixel-display
+  tm1640: ..
+packages:
+  ..:
+    path: ..
+    prefixes:
+      pixel_display: toit-pixel-display
+  toit-font-clock:
+    url: github.com/toitware/toit-font-clock
+    version: 1.0.0
+    hash: 5afcf42f465b96c14ef0d135e2f046e1b9427c4e
+  toit-pixel-display:
+    url: github.com/toitware/toit-pixel-display
+    version: 1.2.0
+    hash: 417f476dd90e096bde74820203277bfaec88d9ca
