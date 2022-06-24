@@ -9,9 +9,9 @@ packages:
       pixel_display: toit-pixel-display
   toit-font-clock:
     url: github.com/toitware/toit-font-clock
-    version: 1.0.0
-    hash: 5afcf42f465b96c14ef0d135e2f046e1b9427c4e
+    version: 1.2.0
+    hash: e1bdd48fb2e028927560bd68fb611ed250b1df1b
   toit-pixel-display:
     url: github.com/toitware/toit-pixel-display
-    version: 1.2.0
-    hash: 417f476dd90e096bde74820203277bfaec88d9ca
+    version: 1.6.0
+    hash: 39de82f680e27961e39ca24ba94520f21759370c
