@@ -3,7 +3,7 @@
 // be found in the EXAMPLES_LICENSE file.
 
 import font show Font
-import font.x11_100dpi.sans.sans_06 as sans
+import font_x11_adobe.sans_06 as sans
 
 import gpio
 
