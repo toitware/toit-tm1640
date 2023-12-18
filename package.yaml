@@ -1,6 +1,7 @@
 name: tm1640
-description: Driver for TM1640 LED driver chip as used in TTGO Expression Panel Blue LED Display Board.
+description: Driver for TM1640 LED driver chip as used in TTGO Expression Panel Blue
+  LED Display Board.
 dependencies:
   pixel_display:
     url: github.com/toitware/toit-pixel-display
-    version: ^1.2.0
+    version: ^2.1.0

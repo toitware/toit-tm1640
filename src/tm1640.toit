@@ -1,4 +1,4 @@
-// Copyright (C) 2021 Toitware ApS. All rights reserved.
+// Copyright (C) 2023 Toitware ApS. All rights reserved.
 // Use of this source code is governed by an MIT-style license that can be
 // found in the LICENSE file.
 
@@ -40,6 +40,10 @@ class Tm1640 extends AbstractDriver:
   constructor .clock_ .data_:
     init_
 
+  // Given two GPIO pins for output.
+  constructor --sck/gpio.Pin --sda/gpio.Pin:
+    return Tm1640 sck sda
+
   static WIDTH_ ::= 16
   static HEIGHT_ ::= 8
 
@@ -48,8 +52,8 @@ class Tm1640 extends AbstractDriver:
   flags/int ::= FLAG_2_COLOR
 
   init_:
-    clock_.config --output
-    data_.config --output
+    clock_.configure --output
+    data_.configure --output
     clock_.set 1
     data_.set 1
 

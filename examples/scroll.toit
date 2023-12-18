@@ -8,16 +8,15 @@ import font_x11_adobe.sans_06 as sans
 import gpio
 
 import pixel_display show *
-import pixel_display.texture show *
-import pixel_display.two_color show *
+import pixel_display.two_color show BLACK WHITE
 import tm1640 show Tm1640
 
 main:
   driver := Tm1640
-    gpio.Pin 27
-    gpio.Pin 25
+    --sck = gpio.Pin 3
+    --sda = gpio.Pin 1
 
-  display := TwoColorPixelDisplay driver
+  display := PixelDisplay.two-color --inverted driver
 
   driver.set_brightness 50
 
@@ -25,11 +24,12 @@ main:
 
   font := Font [sans.ASCII]
 
-  context := display.context --inverted --landscape --font=font --color=WHITE
+  style := Style --font=font --color=WHITE
 
   x := 16
 
-  text := display.text context x 7 "Toit for the win!        IoT made easy!"
+  text := Label --style=style --x=x --y=7 --label="Toit for the win!        IoT made easy!"
+  display.add text
 
   while true:
     for x = 16; x > -200; x--:
