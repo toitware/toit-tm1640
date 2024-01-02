@@ -34,7 +34,7 @@ main:
   while true:
     sleep --ms=2000
     ["How", "fast", "can", "you", "read", "this", "text", ""].do: | word |
-      text.label = word
+      text.text = word
       width := font.pixel-width word
       text.x = 7 - (width >> 1)
       display.draw

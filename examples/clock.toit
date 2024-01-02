@@ -27,7 +27,7 @@ main:
 
   style := Style --color=WHITE --font=font
 
-  time := Label --style=style --x=-1 --y=6 --label="|0:00"
+  time := Label --style=style --x=-1 --y=6 --text="|0:00"
   display.add time
 
   bouncing := BouncingPixel --x=0 --y=0 --w=16 --h=8
@@ -39,7 +39,7 @@ main:
     h := now.h > 12 ? now.h - 12 : now.h
     c := colon ? ":" : "  "
     colon = not colon
-    time.label = "$(%2d h)$c$(%02d now.m)"
+    time.text = "$(%2d h)$c$(%02d now.m)"
     bouncing.seconds = now.s
     display.draw
     sleep --ms=500

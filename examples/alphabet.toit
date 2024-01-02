@@ -27,7 +27,7 @@ main:
 
   style := Style --color=WHITE --font=font
 
-  time := Label --style=style --x=-1 --y=7 --label="!\"#\$%&/~ .,:;-+° @ [] () {} Error 0123456789 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ .,:;-+°"
+  time := Label --style=style --x=-1 --y=7 --text="!\"#\$%&/~ .,:;-+° @ [] () {} Error 0123456789 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ .,:;-+°"
   display.add time
 
   x := 16
