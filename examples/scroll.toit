@@ -28,7 +28,7 @@ main:
 
   x := 16
 
-  text := Label --style=style --x=x --y=7 --label="Toit for the win!        IoT made easy!"
+  text := Label --style=style --x=x --y=7 --text="Toit for the win!        IoT made easy!"
   display.add text
 
   while true:
